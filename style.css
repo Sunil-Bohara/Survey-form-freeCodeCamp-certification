@@ -17,7 +17,8 @@ main {
     background-attachment: fixed;
 }
 
-main h1,p {
+main h1,
+p {
     width: 100%;
     color: #fff;
     text-align: center;
@@ -41,18 +42,20 @@ main p {
 }
 
 #survey-form {
+    width: 55vw;
     background-color: rgba(9, 42, 91, 0.526);
     color: #fff;
-    padding: 3rem;
+    padding-block: 3rem;
     border-radius: 4px;
-
     display: grid;
     place-content: center;
 }
 
 .input-field {
     margin-bottom: 1.4rem;
+    width: 50vw;
 }
+
 .input-field input,
 .input-field select,
 .input-field textarea {
@@ -61,40 +64,50 @@ main p {
 
 .input-field input,
 .input-field select {
-    font-size: 1.1rem;
-    width: 40rem;
+    font-size: 1rem;
+    width: 100%;
     padding: 9px;
     border: none;
     border-radius: 5px;
 }
 
+.input-field select {
+    font-size: 0.9rem;
+}
+
 .input-field label {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 input[type='checkbox'],
 input[type='radio'] {
-    height: 1.2rem;
-    width: 1.2rem;
+    width: 22px;
+    height: 22px;
 }
 
 .input-field .radio-opt,
 .input-field .check-opt {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 0.5rem;
 }
 
+::placeholder {
+    font-size: 0.9rem;
+}
+
 .span-bracket {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .input-field textarea {
-    width: 40rem;
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
 }
 
 .btn {
-    font-size: 1.2rem;
-    width: 40rem;
+    font-size: 1rem;
+    width: 100%;
     padding: 8px 12px;
     background-color: rgba(0, 128, 0, 0.645);
     color: #fff;
@@ -114,64 +127,47 @@ select {
 
 /* Media Queries */
 
+@media screen and (max-width: 700px) {
+    #survey-form {
+        width: 90vw;
+    }
 
-@media only screen and (max-width:100px){
-    main {
-        width: 670px;
+    .input-field {
+        width: 85vw;
+    }
+
+    .input-field input,
+    .input-field select {
+        padding: 7px;
     }
 }
-@media only screen and (max-width:200px){
-    main {
-        width: 670px;
+
+@media screen and (max-width: 400px) {
+
+    main h1 {
+        font-size: 1.3rem;
     }
-}
-@media only screen and (max-width: 300px) {
-    main {
-        width: 670px;
+
+    main p {
+        font-size: 0.8rem;
     }
-}
-@media only screen and (max-width: 400px) {
-    main {
-        width: 800px;
-    }
+
     #survey-form {
-        width: 100%;
-        padding: 0.3rem;
+        width: 100vw;
     }
-}
-@media only screen and (max-width: 500px) {
-    main {
-        width: 670px;
+
+    .input-field {
+        width: 95vw;
     }
-    #survey-form {
-        width: 95%;
-        padding: 0.3rem;
+
+    .input-field input,
+    .input-field select {
+        padding: 5px;
     }
-}
-@media only screen and (max-width: 600px) {
-    main {
-        width: 670px;
-    }
-    #survey-form {
-        width: 95%;
-        padding: 0.5rem;
-    }
-}
-@media only screen and (max-width: 700px) {
-    main {
-        width: 800px;
-    }
-    #survey-form {
-        width: 95%;
-        padding: 0.5rem;
-    }
-}
-@media only screen and (max-width: 800px) {
-    main {
-        width: 800px;
-    }
-    #survey-form {
-        width: 95%;
-        padding-top: 2rem;
+
+    input[type='checkbox'],
+    input[type='radio'] {
+        width: 18px;
+        height: 18px;
     }
 }
