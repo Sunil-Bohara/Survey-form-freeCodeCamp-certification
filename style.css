@@ -10,8 +10,8 @@ body {
 
 main {
     background-color: #444444a8;
-    /* background: url('https://images.unsplash.com/photo-1682353213695-43df0be81aab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); */
-    background: url("./background-img-1.jpg");
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0');
+    /* background: url("./background-img-1.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -153,11 +153,12 @@ select {
     }
 
     #survey-form {
-        width: 95vw;
+        width: 93vw;
+        margin-bottom: 1rem;
     }
 
     .input-field {
-        width: 90vw;
+        width: 88vw;
     }
 
     .input-field input,
